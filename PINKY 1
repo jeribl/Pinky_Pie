@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Načítanie obrázka z URL</title>
+</head>
+<body>
+
+<h2>Zadaj URL obrázka</h2>
+
+<input type="text" id="url" placeholder="https://chatgpt.com/backend-api/estuary/content?id=file_00000000767471f4bbe1c65af23493a7&ts=493551&p=fs&cid=1&sig=cb4825b740e875e42b024a5d9b692b909326ecc6b8cc78d7efedf6f10f81c354&v=0">
+<button onclick="zobraz()">Zobraziť</button>
+
+<br><br>
+<img id="img" width="300">
+
+<script>
+function zobraz() {
+    const url = document.getElementById("url").value;
+    document.getElementById("img").src = url;
+}
+</script>
+
+</body>
+</html>
